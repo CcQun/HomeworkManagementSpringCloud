@@ -6,15 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="zuul" />
-        <module name="eureka-client" />
-        <module name="eureka-server" />
         <module name="HomeworkManagementSpringCloud" />
+        <module name="eureka-client" />
+        <module name="zuul" />
+        <module name="eureka-server" />
+        <module name="config" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="config" options="-parameters" />
       <module name="eureka-client" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="zuul" options="-parameters" />

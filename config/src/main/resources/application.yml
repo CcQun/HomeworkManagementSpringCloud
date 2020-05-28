@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          #  Git仓库地址
+          uri: https://github.com/CcQun/HomeworkManagementSpringCloudConfig
+          #  Git仓库用户名或邮箱
+          username: 13698603020@163.com
+          #  Git仓库密码
+          password: Cui5039795891
+
+server:
+  # 指定端口号
+  port: 8888
