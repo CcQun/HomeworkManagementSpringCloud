@@ -10,5 +10,5 @@ spring:
 zuul:
   routes:
     ribbonClient:
-      path: /ribbonClient/**
-      serviceId: ribbonClient
+      path: /consumer/**
+      serviceId: consumer
