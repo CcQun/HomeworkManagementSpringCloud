@@ -1,0 +1,16 @@
+spring:
+  cloud:
+    config:
+      name: consumer   #需要从github上读取的资源名称，注意没有yml名称
+      profile: test                       #本次访问的配置项
+      label: master
+      uri: http://localhost:8888/
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+security:
+  basic:
+    enabled: false

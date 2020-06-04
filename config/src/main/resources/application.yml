@@ -1,3 +1,7 @@
+server:
+  # 指定端口号
+  port: 8888
+
 spring:
   application:
     name: config
@@ -12,6 +16,26 @@ spring:
           #  Git仓库密码
           password: Cui5039795891
 
-server:
-  # 指定端口号
-  port: 8888
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+  bus:
+    trace:
+      enabled: true     # 开启cloud bus的跟踪
+
+#SpringCloud暴露接口，暴露/bus/refresh接口
+management:
+  security:
+    enabled: false
+
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
+
+#开启基本的权限，默认为true
+security:
+  basic:
+    enabled: false
