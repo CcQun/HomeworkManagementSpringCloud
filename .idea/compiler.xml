@@ -11,6 +11,7 @@
         <module name="eureka-client" />
         <module name="config" />
         <module name="producer" />
+        <module name="producer2" />
         <module name="consumer" />
         <module name="zuul" />
       </profile>
@@ -23,6 +24,7 @@
       <module name="eureka-client" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="producer" options="-parameters" />
+      <module name="producer2" options="-parameters" />
       <module name="zuul" options="-parameters" />
     </option>
   </component>
